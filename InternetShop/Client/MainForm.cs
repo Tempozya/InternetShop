@@ -19,6 +19,7 @@ namespace InternetShop.Client
         public MainForm(string idUser)
         {
             InitializeComponent();
+            MessageBox.Show(idUser );
         }
     }
 }

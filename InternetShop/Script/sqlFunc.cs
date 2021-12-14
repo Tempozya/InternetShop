@@ -25,9 +25,9 @@ namespace InternetShop.Script
         {
             string host = "c9113991.beget.tech";
             int port = 3306;
-            string database = "c9113991_et";
-            string username = "c9113991_et";
-            string password = "Xaker1415";
+            string database = "c9113991_ishop";
+            string username = "c9113991_ishop";
+            string password = "Polina228";
 
             return GetDBConnection(host, port, database, username, password);
         }
@@ -64,7 +64,7 @@ namespace InternetShop.Script
             bool flag = false;
 
 
-            string sql = String.Format("INSERT INTO users(id,login,pass,name,phone) VALUES (@uId,@uLogin, @uPass, @uName,@uPhone)");
+            string sql = String.Format("INSERT INTO users(id_user,name,phone,login,pass) VALUES (@uId,@uName, @uPhone, @uLogin,@uPass)");
 
             MySqlCommand command = new MySqlCommand(sql, conn);
             command.Parameters.Add("@uId", MySqlDbType.VarChar).Value = id;

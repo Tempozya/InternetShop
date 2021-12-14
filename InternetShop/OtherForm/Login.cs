@@ -31,16 +31,16 @@ namespace InternetShop.OtherForm
             {
                 if (sql.LoginUser(textBoxLogin.Text, textBoxPass.Text))
                 {
-                    /* Login.ActiveForm.Hide();
+                    Login.ActiveForm.Hide();
                      MainForm main = new MainForm(textBoxLogin.Text);
-                     main.ShowDialog();*/
-                    MessageBox.Show("Првиет Юзер");
+                     main.ShowDialog();
+                    
                 }
                 else if (textBoxLogin.Text == "admin" && textBoxPass.Text == "admin")
                 {
-                    /* Login.ActiveForm.Hide();
+                     Login.ActiveForm.Hide();
                      MainAdminForm main = new MainAdminForm();
-                     main.ShowDialog();*/
+                     main.ShowDialog();
                     MessageBox.Show("Првиет админ");
                 }
             }
